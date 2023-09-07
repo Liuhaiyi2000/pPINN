@@ -1,3 +1,3 @@
 # pPINN
-solution q
-# Description
+Prediction of phase transition boundary
+
