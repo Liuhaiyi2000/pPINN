@@ -54,10 +54,6 @@ class PhysicsInformedNN:
 
         self.layers = layers
         self.weights, self.biases = self.initialize_NN(layers)
-        
-        # tf placeholders and graph
-        self.sess = tf.Session(config=tf.ConfigProto(allow_soft_placement=True,
-                                                     log_device_placement=True))
 
         self.x0_tf = tf.placeholder(tf.float32, shape=[None, self.x0.shape[1]])
         self.y0_tf = tf.placeholder(tf.float32, shape=[None, self.y0.shape[1]])
